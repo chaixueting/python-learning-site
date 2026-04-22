@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>互动编程 - PyMatrix</title>
+  </head>
+  <body style="overflow: hidden;">
+    <nav class="navbar" style="position: relative;">
+      <div class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>PyMatrix</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/courses.html">学习图谱</a></li>
+        <li><a href="/lesson.html" style="color: var(--accent-cyan);">互动编程</a></li>
+      </ul>
+    </nav>
+
+    <main style="margin-top: 0;">
+      <div class="lesson-container">
+        <!-- 左侧：图文教程 -->
+        <div class="lesson-content">
+          <h1 class="gradient-text">节点 01：变量与数据输出</h1>
+          <p>在 Python 的世界中，<span class="highlight">变量</span>就像是用于存储数据的容器。你不需要提前声明变量的类型，系统会自动推导。</p>
+          
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem;">输出至终端</h3>
+          <p>要与外界进行信息交互，我们最常使用的指令是 <code>print()</code> 函数。</p>
+          
+          <div style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent-purple); margin-bottom: 2rem;">
+            <strong>任务目标：</strong>
+            <ol style="margin-left: 1.5rem; margin-top: 0.5rem; color: var(--text-secondary);">
+              <li>创建一个名为 <code>message</code> 的变量。</li>
+              <li>将字符串 <code>"Hello, PyMatrix!"</code> 赋值给该变量。</li>
+              <li>使用 <code>print()</code> 函数输出该变量的值。</li>
+            </ol>
+          </div>
+
+          <button class="btn btn-primary" id="run-code" style="width: 100%;">
+            运行代码
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </button>
+        </div>
+
+        <!-- 右侧：代码编辑器 -->
+        <div class="lesson-editor">
+          <div class="editor-header">
+            <div class="editor-tabs">
+              <span class="tab active">main.py</span>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #ff5f56;"></span>
+              <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #ffbd2e;"></span>
+              <span style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background: #27c93f;"></span>
+            </div>
+          </div>
+          
+          <div class="editor-body">
+            <div><span style="color: #6e7681; user-select: none; margin-right: 15px;">1</span><span class="comment"># 请在此处输入代码，初始化系统...</span></div>
+            <div><span style="color: #6e7681; user-select: none; margin-right: 15px;">2</span></div>
+            <div><span style="color: #6e7681; user-select: none; margin-right: 15px;">3</span>message <span style="color: #ff7b72;">=</span> <span class="string">"Hello, PyMatrix!"</span></div>
+            <div><span style="color: #6e7681; user-select: none; margin-right: 15px;">4</span><span class="function">print</span>(message)</div>
+            <div><span style="color: #6e7681; user-select: none; margin-right: 15px;">5</span></div>
+          </div>
+
+          <!-- 终端输出模拟 -->
+          <div class="terminal-output">
+            <div class="terminal-header">Terminal / Output</div>
+            <div id="terminal-content" class="terminal-text" style="opacity: 0;"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

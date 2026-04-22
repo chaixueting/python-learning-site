@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学习图谱 - PyMatrix</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>PyMatrix</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">首页</a></li>
+        <li><a href="/courses.html" style="color: var(--accent-cyan);">学习图谱</a></li>
+        <li><a href="/lesson.html">互动编程</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="grid-container" style="padding-top: 4rem;">
+        <h1 class="section-title gradient-text animate-fade-in-up">系统化学习图谱</h1>
+        <p class="animate-fade-in-up delay-100" style="text-align: center; color: var(--text-secondary); margin-bottom: 4rem;">按节点逐步解锁您的 Python 技能树。</p>
+
+        <div class="cards-grid animate-fade-in-up delay-200">
+          <a href="/lesson.html" class="card">
+            <div class="card-icon">01</div>
+            <h3>初始化：变量与数据类型</h3>
+            <p>理解内存分配、基础数据类型（整数、浮点数、字符串），并编写你的第一行代码。</p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+              <span>12 课时</span>
+              <span style="color: var(--accent-green);">已完成</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 100%; background: var(--accent-green);"></div>
+            </div>
+          </a>
+
+          <a href="/lesson.html" class="card">
+            <div class="card-icon">02</div>
+            <h3>逻辑控制流</h3>
+            <p>掌握 if-else 条件判断、for/while 循环结构，让你的程序具有判断力。</p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+              <span>18 课时</span>
+              <span style="color: var(--accent-cyan);">进行中 60%</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 60%;"></div>
+            </div>
+          </a>
+
+          <div class="card" style="opacity: 0.6; filter: grayscale(0.8);">
+            <div class="card-icon">🔒</div>
+            <h3>函数与模块化编程</h3>
+            <p>定义复用逻辑，理解作用域、闭包以及如何使用和编写第三方包。</p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+              <span>15 课时</span>
+              <span>未解锁</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <div class="card" style="opacity: 0.6; filter: grayscale(0.8);">
+            <div class="card-icon">🔒</div>
+            <h3>面向对象编程 (OOP)</h3>
+            <p>类、实例、继承与多态。运用面向对象思维构建复杂应用架构。</p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">
+              <span>25 课时</span>
+              <span>未解锁</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
